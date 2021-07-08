@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Form Validation</title>
+</head>
+<script>
+    
+</script>
+<body>
+    <h1>NEW FORM</h1>
+    <h2 style="color: rgb(136, 28, 28);"> <%= message %></h2>
+   <form id="form" action="/form" method="POST">
+        <ul>
+           <li>
+               <label for="">FirstName</label>
+               <input type="text" name="fname" value="<%=typeof fname !='undefined'? fname:''%>" autocomplete='off'>
+           </li>
+           <li>
+            <label for="">MiddleName</label>
+            <input type="text" name="mname" value="<%=typeof mname !='undefined'? mname:''%> " autocomplete='off'>
+        </li>
+        <li>
+            <label for="">LastName</label>
+            <input type="text" name="lname" value="<%=typeof lname !='undefined'? lname:'' %>" autocomplete='off'>
+        </li>
+        <li>
+            <label for="">Email</label>
+            <input type="text" name="email" value="<%=typeof email !='undefined'? email:'' %>" autocomplete='off'>
+        </li>
+        <li>
+            <label for="">Phone</label>
+            <input type="text" name="phone" value="<%=typeof phone !='undefined'? phone:''%> " autocomplete='off'>
+        </li>
+        <li>
+            <button id='btn' type="Submit">Submit</button>
+        </li>
+       </ul>
+ </form>
+ 
+
+ <a href="/update">UPDATE FORM</a>
+</body>
+</html>
